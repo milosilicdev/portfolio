@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>welcome</title>
+    <style>
+        body {
+            background-color: #34A0A4;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p></p>
+    </main>
+
+    <script>
+        const message = 'hello';
+
+        [message].forEach(letter => {
+            setTimeout(() => {
+                const p = document.querySelector('p');
+                const currentValue = p.textContent;
+
+                p.textContent = currentValue + letter;
+            }, 300);
+        })
+    </script>
+</body>
+</html>
